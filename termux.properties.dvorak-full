@@ -1,0 +1,82 @@
+# ==============================================================================
+# Termux Full 13-Column Dvorak Extra-Keys Configuration
+# Copy or symlink to ~/.termux/termux.properties and run termux-reload-settings
+# ==============================================================================
+
+allow-external-apps = false
+hide-soft-keyboard-on-startup = true
+soft-keyboard-toggle-behaviour = enable/disable
+terminal-toolbar-height = 1.2
+extra-keys-text-all-caps = false
+
+### Full Dvorak keyboard layout in extra-keys (tap for key, swipe up for Shift/popup)
+extra-keys = [ \
+  [ \
+    { key: '`', popup: '~' }, \
+    { key: '1', popup: '!' }, \
+    { key: '2', popup: '@' }, \
+    { key: '3', popup: '#' }, \
+    { key: '4', popup: '$' }, \
+    { key: '5', popup: '%' }, \
+    { key: '6', popup: '^' }, \
+    { key: '7', popup: '&' }, \
+    { key: '8', popup: '*' }, \
+    { key: '9', popup: '(' }, \
+    { key: '0', popup: ')' }, \
+    { key: '[', popup: '{' }, \
+    { key: ']', popup: '}' } \
+  ], \
+  [ \
+    { key: "'", popup: '"' }, \
+    { key: ',', popup: '<' }, \
+    { key: '.', popup: '>' }, \
+    { key: 'p', popup: 'P' }, \
+    { key: 'y', popup: 'Y' }, \
+    { key: 'f', popup: 'F' }, \
+    { key: 'g', popup: 'G' }, \
+    { key: 'c', popup: 'C' }, \
+    { key: 'r', popup: 'R' }, \
+    { key: 'l', popup: 'L' }, \
+    { key: '/', popup: '?' }, \
+    { key: '=', popup: '+' } \
+  ], \
+  [ \
+    { key: 'a', popup: 'A' }, \
+    { key: 'o', popup: 'O' }, \
+    { key: 'e', popup: 'E' }, \
+    { key: 'u', popup: 'U' }, \
+    { key: 'i', popup: 'I' }, \
+    { key: 'd', popup: 'D' }, \
+    { key: 'h', popup: 'H' }, \
+    { key: 't', popup: 'T' }, \
+    { key: 'n', popup: 'N' }, \
+    { key: 's', popup: 'S' }, \
+    { key: '-', popup: '_' }, \
+    { key: '\\\\', popup: '|' } \
+  ], \
+  [ \
+    TAB, \
+    { key: ';', popup: ':' }, \
+    { key: 'q', popup: 'Q' }, \
+    { key: 'j', popup: 'J' }, \
+    { key: 'k', popup: 'K' }, \
+    { key: 'x', popup: 'X' }, \
+    { key: 'b', popup: 'B' }, \
+    { key: 'm', popup: 'M' }, \
+    { key: 'w', popup: 'W' }, \
+    { key: 'v', popup: 'V' }, \
+    { key: 'z', popup: 'Z' }, \
+    { key: BKSP, popup: DEL } \
+  ], \
+  [ \
+    { key: ESC, popup: KEYBOARD }, \
+    CTRL, \
+    ALT, \
+    SPACE, \
+    { key: LEFT, popup: HOME }, \
+    { key: DOWN, popup: PGDN }, \
+    { key: UP, popup: PGUP }, \
+    { key: RIGHT, popup: END }, \
+    ENTER \
+  ] \
+]

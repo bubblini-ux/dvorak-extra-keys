@@ -1,0 +1,30 @@
+# ==============================================================================
+# Termux Standard 2-Row Coding Extra-Keys Configuration
+# Copy or symlink to ~/.termux/termux.properties and run termux-reload-settings
+# ==============================================================================
+
+allow-external-apps = false
+
+### Two rows of extra keys (Bash/coding friendly, swipe up for popups)
+extra-keys = [ \
+  [ \
+    { key: ESC,  popup: '~' }, \
+    { key: '/',  popup: '\\\\' }, \
+    { key: '-',  popup: '_' }, \
+    { key: '|',  popup: '&' }, \
+    { key: '(',  popup: '{' }, \
+    { key: HOME, popup: PGUP }, \
+    UP, \
+    { key: END,  popup: PGDN } \
+  ], \
+  [ \
+    { key: TAB,  popup: '`' }, \
+    CTRL, \
+    ALT, \
+    { key: '$',  popup: '#' }, \
+    { key: ')',  popup: '}' }, \
+    LEFT, \
+    DOWN, \
+    RIGHT \
+  ] \
+]
